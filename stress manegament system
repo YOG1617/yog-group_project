@@ -1,0 +1,249 @@
+#include<stdio.h>
+
+int study, sleep, pressure;
+int rank, future;
+int attempt, syllabus;
+int percentile, competition;
+int careerFear, societyPressure;
+int stream;
+int stream;
+int preference,focus;
+
+void common();
+void science();
+void upsc();
+void commerce();
+void humanities();
+void analysis();
+
+void common()
+{
+    printf("\nHow many hours do you study/practice per day?\n");
+    printf("1.<4  2.4-6  3.7-9  4.>9\n");
+    scanf("%d", &study);
+
+    printf("\nHow many hours do you sleep per day?\n");
+    printf("1.<5  2.5-6  3.7-8  4.>8\n");
+    scanf("%d", &sleep);
+
+    printf("\nMain source of pressure:\n");
+    printf("1.Self  2.Parents  3.Peers  4.Teachers\n");
+    scanf("%d", &pressure);
+}
+
+void science()
+{
+    printf("\nDo you worry about AIR?\n");
+    printf("1.Constantly 2.Often 3.Sometimes 4.Rarely\n");
+    scanf("%d", &rank);
+
+    printf("\nDo you think one exam decides everything?\n");
+    printf("1.Yes fully 2.Mostly 3.Not fully 4.No\n");
+    scanf("%d", &future);
+}
+
+void upsc()
+{
+    printf("\nDo you worry about limited attempts?\n");
+    printf("1.Constantly 2.Often 3.Sometimes 4.Rarely\n");
+    scanf("%d", &attempt);
+
+    printf("\nIs syllabus overwhelming?\n");
+    printf("1.Very 2.Mostly 3.Manageable 4.Not at all\n");
+    scanf("%d", &syllabus);
+}
+
+void commerce()
+{
+    printf("\nDo you worry about CAT percentile?\n");
+    printf("1.Constantly 2.Often 3.Sometimes 4.Rarely\n");
+    scanf("%d", &percentile);
+
+    printf("\nIs competition stressing you?\n");
+    printf("1.Very 2.Moderate 3.Little 4.Not at all\n");
+    scanf("%d", &competition);
+}
+
+void humanities()
+{
+    printf("\nDo you worry about career uncertainty?\n");
+    printf("1.Constantly 2.Often 3.Sometimes 4.Rarely\n");
+    scanf("%d", &careerFear);
+
+    printf("\nDo you feel society undervalues this stream?\n");
+    printf("1.Yes strongly 2.Agree 3.Disagree 4.Not at all\n");
+    scanf("%d", &societyPressure);
+}
+
+void analysis()
+{
+    printf("\n----- Analysis Report -----\n");
+
+    /* Common */
+
+    if(study >= 3)
+        printf("- You are studying long hours. Take small breaks.\n");
+    else
+        printf("- Study hours are manageable.\n");
+
+    if(sleep <= 2)
+        printf("- Sleep is low. Try to sleep at least 7 hours.\n");
+    else
+        printf("- Sleep schedule looks fine.\n");
+
+    if(pressure == 2)
+        printf("- Parental pressure detected.\n");
+    else if(pressure == 3)
+        printf("- Peer pressure detected.\n");
+
+    /* Stream specific */
+
+    switch(stream)
+    {
+        case 1:
+            if(rank <= 2)
+                printf("- Rank anxiety present.\n");
+                printf("Focus on improving your marks, not comparing ranks.\n");
+            if(future <= 2)
+                printf("- You think one exam decides everything.\n");
+                printf("Remember, there are many career paths beyond one exam.\n");
+            break;
+
+        case 2:
+            if(attempt <= 2)
+                printf("- Attempt anxiety present.\n");
+                printf("Concentrate on preparation quality instead of number of attempts.\n");
+            if(syllabus <= 2)
+                printf("- Syllabus feels overwhelming.\n");
+                printf("Divide the syllabus into small daily targets.\n");
+            break;
+
+        case 3:
+            if(percentile <= 2)
+                printf("- Percentile stress detected.\n");
+                printf("Work on accuracy and time management regularly.\n");
+            if(competition <= 2)
+                printf("- Competition pressure high.\n");
+                printf("Improve weak sections step by step.\n");
+            break;
+
+        case 4:
+            if(careerFear <= 2)
+                printf("- Career uncertainty stress present.\n");
+                printf("Explore skills and internships to build confidence.\n");
+            if(societyPressure <= 2)
+             printf("- Social validation pressure detected.\n");
+                printf("Choose your passion over societal approval.\n");
+            break;
+    }
+
+    printf("\nOverall Advice: Maintain balance and consistency.\n");
+}
+void timetable()
+{
+    printf("\n----- Dynamic Timetable -----\n");
+
+    // Ask 2 extra questions
+    printf("\nDo you prefer studying in the morning or at night?\n");
+    printf("1. Morning  2. Night\n");
+    scanf("%d", &preference);
+
+    printf("\nWhich area do you want to focus more on?\n");
+    printf("1. Strong subjects  2. Weak subjects\n");
+    scanf("%d", &focus);
+
+    // Adjust timetable based on stream + preferences
+    switch(stream)
+    {
+        case 1: // JEE/NEET
+            if(preference == 1)
+                printf("6:30–9:00 AM → Core subject practice (Physics/Math)\n");
+            else
+                printf("8:00–11:00 PM → Core subject practice (Physics/Math)\n");
+
+            if(focus == 2)
+printf("Afternoon → Extra time for weak topics\n");
+            else
+                printf("Afternoon → Balanced revision of all subjects\n");
+
+            printf("Daily Mock Test → 3:00 – 6:00 PM\n");
+            break;
+
+        case 2: // UPSC
+            if(preference == 1)
+                printf("6:00–8:00 AM → Newspaper & Current Affairs\n");
+            else
+                printf("9:00–11:00 PM → Newspaper & Current Affairs\n");
+
+            if(focus == 2)
+                printf("Afternoon → Optional subject (weak area focus)\n");
+            else
+                printf("Afternoon → GS Paper revision\n");
+
+            printf("Evening → Answer writing practice\n");
+            break;
+
+        case 3: // Commerce/CAT
+            if(preference == 1)
+                printf("7:00–9:00 AM → Quant practice\n");
+            else
+                printf("8:00–10:00 PM → Quant practice\n");
+  if(focus == 2)
+                printf("Afternoon → Weak section drills (DI/LR or Verbal)\n");
+            else
+                printf("Afternoon → Mixed section practice\n");
+
+            printf("Evening → Mock test & analysis\n");
+            break;
+
+        case 4: // Humanities
+            if(preference == 1)
+                printf("7:00–9:00 AM → Reading & note-making\n");
+            else
+                printf("8:00–10:00 PM → Reading & note-making\n");
+
+            if(focus == 2)
+                printf("Afternoon → Skill-building in weak areas (writing, projects)\n");
+            else
+                printf("Afternoon → Balanced creative + academic work\n");
+
+            printf("Evening → Discussions / debates / hobbies\n");
+            break;
+
+        default:
+            printf("Invalid stream choice.\n");
+    }
+
+if(sleep <= 2)
+        printf("\n⚠️ Reminder: Your sleep is low. Add at least 1 hour rest before study blocks.\n");
+    else
+        printf("\n✅ Sleep schedule supports this timetable.\n");
+}
+
+
+
+int main()
+{
+    printf("Select Stream:\n");
+    printf("1. JEE/NEET Aspirant\n");
+    printf("2. UPSC Aspirant\n");
+    printf("3. Commerce/CAT Aspirant\n");
+    printf("4. Humanities Student\n");
+    scanf("%d", &stream);
+
+    common();
+
+    switch(stream)
+    {
+        case 1: science(); break;
+        case 2: upsc(); break;
+        case 3: commerce(); break;
+        case 4: humanities(); break;
+        default: printf("Invalid choice\n");
+    }
+
+    analysis();
+    timetable();
+
+    return 0;
+}
