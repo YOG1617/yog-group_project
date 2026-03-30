@@ -215,9 +215,9 @@ printf("Afternoon → Extra time for weak topics\n");
     }
 
 if(sleep <= 2)
-        printf("\n⚠️ Reminder: Your sleep is low. Add at least 1 hour rest before study blocks.\n");
+        printf("\n  Reminder: Your sleep is low. Add at least 1 hour rest before study blocks.\n");
     else
-        printf("\n✅ Sleep schedule supports this timetable.\n");
+        printf("\n Sleep schedule supports this timetable.\n");
 }
 
 
