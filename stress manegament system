@@ -77,7 +77,7 @@ void humanities()
 
 void analysis()
 {
-    printf("\n----- Analysis Report -----\n");
+    printf("\n  Analysis Report \n");
 
     /* Common */
 
