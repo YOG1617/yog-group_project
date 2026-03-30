@@ -1,39 +1,39 @@
 Student Stress Analyzer (C Project)
-📌 Overview
+ *Overview
 
 The Student Stress Analyzer is a console-based application developed in C that evaluates a student’s stress level based on daily habits, academic pressure, and career-related concerns. The program interacts with users through a structured questionnaire and provides personalized feedback along with a dynamically generated study timetable.
 
 This project focuses on combining basic programming concepts with a real-world problem—student stress management—to create a simple decision-support tool.
 
-🎯 Objectives
+* Objectives
 To analyze student stress factors such as study hours, sleep, and external pressure
 To provide personalized suggestions for improving productivity and mental balance
 To generate a customized timetable based on user preferences
 To demonstrate structured programming and logic building in C
-⚙️ Features
-1. 🧠 Interactive Questionnaire
+ Features
+1.  Interactive Questionnaire
 
 The program asks users a set of questions related to:
 
 Study hours
 Sleep duration
 Source of pressure (self, parents, peers, teachers)
-2. 🎓 Stream-Based Analysis
+2. Stream-Based Analysis
 
-Different streams have different stress factors, so the program includes separate modules for:
+*Different streams have different stress factors, so the program includes separate modules for:
 
 JEE/NEET Aspirants (Science) – Rank anxiety, exam pressure
 UPSC Aspirants – Attempt limits, vast syllabus
 Commerce/CAT Aspirants – Percentile and competition stress
 Humanities Students – Career uncertainty and societal pressure
-3. 📈 Personalized Analysis Report
+3. Personalized Analysis Report
 
 Based on user responses, the program:
 
 Identifies key stress indicators
 Provides specific suggestions for improvement
 Highlights issues like low sleep or high pressure
-4. 🗓️ Dynamic Timetable Generator
+4.  Dynamic Timetable Generator
 
 The timetable adapts based on:
 
@@ -43,16 +43,16 @@ Selected academic stream
 
 It also adjusts recommendations if poor sleep habits are detected.
 
-🧩 Technical Implementation
-🔹 Programming Language
+* Technical Implementation
+ Programming Language
 C (Standard I/O library)
-🔹 Core Concepts Used
+ Core Concepts Used
 Functions (modular design)
 Conditional statements (if-else, switch-case)
 Global variables
 User input handling (scanf)
 Structured program flow
-🔹 Functional Decomposition
+ Functional Decomposition
 
 The program is divided into multiple functions:
 
@@ -60,29 +60,29 @@ common() → collects general data
 science(), upsc(), commerce(), humanities() → stream-specific inputs
 analysis() → generates stress report
 timetable() → creates personalized schedule
-🏗️ Program Flow
+ *Program Flow
 User selects their academic stream
 Common questions are asked
 Stream-specific questions are presented
 Stress analysis report is generated
 Personalized timetable is displayed
-✅ Advantages
+*Advantages
 Simple and easy-to-use interface
 Modular and readable code structure
 Real-world application of programming logic
 Personalized output enhances user engagement
-⚠️ Limitations
+* Limitations
 No input validation (invalid inputs may cause incorrect behavior)
 Uses basic rule-based logic (no advanced analytics)
 Relies on global variables (less scalable design)
 Console-based UI (no graphical interface)
-🚀 Future Enhancements
+* Future Enhancements
 Implement input validation for robustness
 Introduce a scoring system to classify stress levels (Low/Medium/High)
 Store user data and generate reports using file handling
 Improve UI with colors or transition to a GUI-based application
 Integrate data analytics or machine learning for smarter insights
-📌 Conclusion
+* Conclusion
 
 The Student Stress Analyzer demonstrates how fundamental programming concepts can be applied to solve real-life problems. While simple in implementation, it provides meaningful insights and serves as a strong foundation for building more advanced, user-friendly mental wellness tools in the future.                                                                                                                                                                                                                                                                                                                                                                                 * Test cases 5
 Test Case 1 – High Stress (JEE Aspirant)
