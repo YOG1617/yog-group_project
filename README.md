@@ -106,7 +106,7 @@ Parental pressure detected
 Rank anxiety present
 One-exam mindset warning
 Timetable with weak subject focus
-✅ Test Case 2 – Balanced Student (UPSC)
+ Test Case 2 – Balanced Student (UPSC)
 
 Input:
 
@@ -126,7 +126,7 @@ Sleep adequate
 No major stress detected
 Balanced timetable
 No strong warnings
-✅ Test Case 3 – Moderate Stress (Commerce/CAT)
+ Test Case 3 – Moderate Stress (Commerce/CAT)
 
 Input:
 
@@ -147,7 +147,7 @@ Peer pressure detected
 Percentile stress
 Competition pressure
 Weak area focused timetable
-✅ Test Case 4 – Humanities Pressure Case
+Test Case 4 – Humanities Pressure Case
 
 Input:
 
@@ -167,7 +167,7 @@ Career uncertainty stress
 Social validation pressure
 Advice on skills and passion
 Balanced timetable
-✅ Test Case 5 – Invalid Input Case
+ Test Case 5 – Invalid Input Case
 
 Input:
 
