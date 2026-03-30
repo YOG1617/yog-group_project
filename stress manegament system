@@ -141,7 +141,7 @@ void analysis()
 }
 void timetable()
 {
-    printf("\n----- Dynamic Timetable -----\n");
+    printf("\n  Dynamic Timetable \n");
 
     // Ask 2 extra questions
     printf("\nDo you prefer studying in the morning or at night?\n");
